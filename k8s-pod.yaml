@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: go-server
+spec:
+  containers:
+  - name: go-server
+    image: gcr.io/k8s-skaffold/skaffold-example
+    ports:
+    - containerPort: 8080
